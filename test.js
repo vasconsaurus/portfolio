@@ -6,3 +6,6 @@ function toggleRound() {
 }
 
 pic.addEventListener('click', toggleRound);
+
+pic.alt = 'me';
+console.log(pic.alt)
