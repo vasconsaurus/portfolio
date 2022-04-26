@@ -45,4 +45,10 @@ p {
   align-items: flex-end;
   gap: 1rem;
   justify-content: center;
+  transform: translateX(0);
+  transition: transform 0.2s;
+}
+
+.outside {
+  transform: translateX(-200%);
 }
