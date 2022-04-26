@@ -1,13 +1,34 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0.5px solid blue;
+}
+
+body {
+  position: relative;
+}
+
 .vertical {
-  writing-mode:sideways-lr;
+  writing-mode: sideways-lr;
 }
 
-img {
-  height: 50px;
+.intro__background {
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+}
+
+.intro__text {
+  position: absolute;
+  font-size: 10rem;
+  color: white;
+  top: 0;
+}
+
+.about__header {
+  width: 100vw;
+  object-fit: cover;
   transition: all 0.2s;
-}
-
-.round {
-  border-radius: 50%;
-  transform: rotate(1turn);
+  z-index: -1;
 }
