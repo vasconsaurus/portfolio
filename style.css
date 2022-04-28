@@ -24,25 +24,32 @@ p {
 }
 
 .intro__text {
-  position: absolute;
+  position: fixed;
   font-size: 10rem;
-  color: white;
+  color: yellow;
   top: 0;
+}
+
+.send-to-back {
+  z-index: -1;
 }
 
 .about {
   background-image: url("./images/welcome-section__image.gif");
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
+  padding-top: 50vh;
+  display: flex;
+  align-items: end;
 }
 
 .about__inner-text {
   background-color: white;
-  padding: 5rem;
-  margin: 50vh 5rem 5rem 5rem;
+  padding: 3rem;
+  margin: 0vh 3rem 3rem 3rem;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 1rem;
   justify-content: center;
   transform: translateX(0);
@@ -51,4 +58,24 @@ p {
 
 .outside {
   transform: translateX(-200%);
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .intro__text {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .intro__text {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .intro__text {
+    font-size: 4rem;
+  }
 }
