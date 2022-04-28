@@ -19,13 +19,28 @@ p {
   writing-mode: vertical-lr;
 }
 
-
 /* intro & about */
 
 .intro__background {
   background-color: blue;
   width: 100%;
   height: 50vh;
+  position: relative;
+}
+
+.social__ul {
+position: fixed;
+top: 1rem;
+right: 1rem;
+z-index: 2;
+}
+
+.social__list {
+  list-style: none;
+}
+
+i {
+  color: white;
 }
 
 .intro__text {
