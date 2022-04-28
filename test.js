@@ -15,4 +15,3 @@ const ob = new IntersectionObserver(obCallback, {
 });
 
 ob.observe(about.firstElementChild)
-console.log(intro_text)

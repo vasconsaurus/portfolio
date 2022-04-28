@@ -1,3 +1,5 @@
+/* general */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0px;
@@ -17,8 +19,11 @@ p {
   writing-mode: vertical-lr;
 }
 
+
+/* intro & about */
+
 .intro__background {
-  background-color: black;
+  background-color: blue;
   width: 100%;
   height: 50vh;
 }
@@ -26,12 +31,13 @@ p {
 .intro__text {
   position: fixed;
   font-size: 10rem;
-  color: yellow;
+  color: white;
   top: 0;
 }
 
 .send-to-back {
   z-index: -1;
+  color: lightcyan;
 }
 
 .about {
@@ -59,6 +65,23 @@ p {
 .outside {
   transform: translateX(-200%);
 }
+
+
+/* container */
+
+.container {
+  padding: 3rem;
+}
+
+.module {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+
+/* media-queries */
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
