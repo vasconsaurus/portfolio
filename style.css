@@ -17,12 +17,13 @@ p {
 
 .vertical {
   writing-mode: vertical-lr;
+  color: #0000ff;
 }
 
 /* intro & about */
 
 .intro__background {
-  background-color: blue;
+  background: linear-gradient(315deg, #7f53ac 0%, #0000ff 74%);
   width: 100%;
   height: 50vh;
   position: relative;
@@ -45,7 +46,9 @@ i {
 
 .intro__text {
   position: fixed;
+  font-family: futura;
   font-size: 10rem;
+  line-height: 1.15;
   color: white;
   top: 0;
 }
