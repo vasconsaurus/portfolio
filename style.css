@@ -4,15 +4,20 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  border: 0.5px solid blue;
+  /* border: 0.5px solid blue; */
 }
 
 body {
   position: relative;
+  background: linear-gradient(315deg, #7f53ac 0%, #0000ff 74%);
+  font-family: scandia-line-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p {
   font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .vertical {
@@ -46,7 +51,9 @@ i {
 
 .intro__text {
   position: fixed;
-  font-family: futura;
+  font-family: scandia-line-web,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 10rem;
   line-height: 1.15;
   color: white;
@@ -55,7 +62,7 @@ i {
 
 .send-to-back {
   z-index: -1;
-  color: lightcyan;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .about {
@@ -88,6 +95,12 @@ i {
 /* container */
 
 .container {
+  padding: 3rem;
+}
+
+.container-narrow {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
   padding: 3rem;
 }
 
