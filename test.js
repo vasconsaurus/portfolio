@@ -5,7 +5,7 @@ const intro_text = document.querySelector('.intro__text')
 function obCallback(payload) {
   if(payload[0].intersectionRatio === 1) {
     inner_text.classList.remove("outside")
-    intro_text.classList.toggle("send-to-back")
+    intro_text.classList.toggle("send-to-side")
   }
 }
 
